@@ -8,7 +8,6 @@ import { POSTS } from '../data/post.db';
 export class DataService {
 
 
-
   private arrPost: Post[] = POSTS;
 
 
@@ -18,13 +17,20 @@ export class DataService {
 
 
   createPost(nuevoPost: Post) {
-    this.arrPost.push(nuevoPost);
+    const fechaActual = new Date();
 
+    const fechaFormateada = fechaActual.getDate() + '/' + (fechaActual.getMonth() + 1) + '/' + fechaActual.getFullYear();
+
+    nuevoPost.fecha = fechaFormateada;
+
+    if (!nuevoPost.categoria) {
+      nuevoPost.categoria = 'Baja'
+    }
+    this.arrPost.unshift(nuevoPost);
   }
 
-
   getByCategoria(categoria: string): Post[] {
-    return this.arrPost.filter(post => post.categoria === categoria)
+    return this.arrPost.filter(post => post.categoria.toLowerCase() === categoria.toLowerCase())
   }
 
   getFilterCategoria(): string[] {

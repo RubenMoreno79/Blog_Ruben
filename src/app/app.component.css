@@ -1,7 +1,29 @@
+@import url(https://fonts.googleapis.com/css?family=Madimi+One:regular);
+
+h1 {
+    font-family: 'madimi one';
+    padding: 20px 0 20px 20px;
+    font-size: 60px;
+    background-color: rgba(0, 139, 139, 0.425);
+    color: darkcyan;
+    text-align: center;
+    box-shadow: 0 10px 20px 5px rgb(2, 90, 90);
+}
+
+
 ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    padding-top: 20px;
+    padding-top: 70px;
+    padding-left: 0;
+}
+
+p {
+    font-family: 'madimi one';
+    font-size: 25px;
+    padding-top: 60px;
+    text-align: center;
+    color: rgb(6, 138, 138);
 }

@@ -25,6 +25,7 @@ export class ListaPostComponent {
 
   Onchange($event: any) {
     const categoria = $event.target.value;
+    console.log(categoria);
 
     if (categoria === 'todas') {
       this.arrPost = this.DataService.getAll();

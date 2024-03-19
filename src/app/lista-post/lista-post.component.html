@@ -1,10 +1,10 @@
 <div class="filtros">
 
 <select class="form-select"  (change)="Onchange($event)">
-<option value="todas">Categoría</option>
-@for (categoria of arrCategoria; track $index) {
-<option>{{categoria}}</option>
-}
+<option value="todas">Seleccione nivel de dificultad</option>
+        <option value="baja">Baja</option>
+        <option value="media">Media</option>
+        <option value="alta">Alta</option>
 
 </select>
 
@@ -13,9 +13,10 @@
     <div class="post">
       <h2>{{ post.titulo }}</h2>
       <p>{{ post.texto }}</p>
-      <p>{{ post.autor }}</p>
+      <p style="font-family: oregano; color: darkcyan;font-size: 20px;">{{post.fecha}}</p>
       <img [src]="post.imagen" alt="" />
-      <p class="p-3 mb-2 bg-secondary text-white">{{ post.categoria }}</p>
+      <p style="color: darkcyan; font-family: oregano; font-size: 20px; margin-bottom: 2px;">Posted by {{ post.autor }}</p>
+      <p style="color: darkcyan; background-color: darkcyan; color: white; padding: 6px; width: 500px;">Dificultad: {{ post.categoria }}</p>
       <hr>
     </div>
   }
