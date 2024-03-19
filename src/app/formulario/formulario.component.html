@@ -1,0 +1,37 @@
+<div class="body">
+<div class="container">
+  <h1>Crea un post</h1>
+  
+  <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+    <div class="mb-3 mt-3">
+      <label class="form-label">Titulo</label>
+      <input type="text" class="form-control" formControlName="titulo" />
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Texto</label>
+      <input type="text" class="form-control" formControlName="texto" />
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Autor</label>
+      <input type="text" class="form-control" formArrayName="autor" />
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Imagen</label>
+      <input type="text" class="form-control" formControlName="imagen" />
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Fecha</label>
+      <input type="text" class="form-control" formControlName="fecha" />
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Categoría</label>
+      <input type="text" class="form-control" formControlName="categoria" />
+    </div>
+   
+    <div class="boton">
+    <input type="submit" value="New" class="btn btn-dark"/>
+    </div>
+  </form>
+</div>
+
+</div>

@@ -1,0 +1,22 @@
+@import url(https://fonts.googleapis.com/css?family=Kavoon:regular);
+
+@import url(https://fonts.googleapis.com/css?family=Norican:regular);
+
+.container {
+    background: linear-gradient(90deg, rgb(4, 114, 122) 0%, rgb(52, 138, 160) 35%, rgb(2, 97, 116) 100%);
+    padding: 10px 15px 15px 15px;
+    border-radius: 3%;
+    font-size: 25px;
+    color: black;
+    font-family: 'Norican';
+
+
+}
+
+h1 {
+    font-family: 'Kavoon';
+}
+
+.boton {
+    font-family: 'Kavoon';
+}

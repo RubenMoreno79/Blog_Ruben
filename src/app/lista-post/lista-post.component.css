@@ -1,0 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=Oregano:regular,italic);
+
+
+h2 {
+    font-family: 'Oregano';
+    color: darkcyan;
+    margin-top: 20px;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+select {
+    background-color: rgba(122, 202, 202, 0.322);
+    color: rgb(1, 80, 80);
+}

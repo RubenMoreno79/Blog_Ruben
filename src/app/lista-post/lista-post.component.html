@@ -1,0 +1,28 @@
+<div class="filtros">
+
+<select class="form-select"  (change)="Onchange($event)">
+<option value="todas">Categoría</option>
+@for (categoria of arrCategoria; track $index) {
+<option>{{categoria}}</option>
+}
+
+</select>
+
+<div class="post">
+  @for (post of arrPost; track post.categoria) {
+    <div class="post">
+      <h2>{{ post.titulo }}</h2>
+      <p>{{ post.texto }}</p>
+      <p>{{ post.autor }}</p>
+      <img [src]="post.imagen" alt="" />
+      <p class="p-3 mb-2 bg-secondary text-white">{{ post.categoria }}</p>
+      <hr>
+    </div>
+  }
+</div>
+</div>
+
+
+
+
+
